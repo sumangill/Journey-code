@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Webpack Boilerplate Starter Template</title>
+  <script src="https://kit.fontawesome.com/ab4d0f0c3b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <meta name="description"
+    content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools.">
+  <meta name="keywords"
+    content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Plamen Nikolov, WeAreAthlon">
+  <!-- overlay script -->
+  <script>
+    function on(obj) {
+      var qicon = obj;
+      var parentDiv = qicon.parentElement;
+      var overlay = parentDiv.querySelector(".overlay");
+      overlay.style.display = "block";
+    }
+    function off(obj) {
+      var overlay = obj;
+      overlay.style.display = "none";
+    }
+  </script>
+</head>
+
+<body>
+
+  <main>
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide relative" data-bs-ride="carousel">
+      <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner relative w-full overflow-hidden">
+        <div class="carousel-item active float-left w-full">
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="block w-full" alt="Wild Landscape" />
+        </div>
+        <div class="carousel-item float-left w-full">
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="block w-full" alt="Camera" />
+        </div>
+        <div class="carousel-item float-left w-full">
+          <video class="img-fluid" autoplay loop muted>
+            <source src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col">
+          <div class="card h-100 info">
+            <div class="vcenter-item overlay" onclick="off(this)">
+              <i class="close-icon fa-solid fa-circle-xmark"></i>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
+            </div>
+            <i class="info-icon fa-solid fa-question-circle" onclick="on(this)"></i>
+            <img src="images/content/slide-img-1.jpg" class="card-img-top" alt="images">
+            <div class="card-body">
+              <h5 class="card-title mt-3 mb-4">Lorem ipsum title</h5>
+              <span class="iwt">
+                <i class="fa-solid fa-battery-half"></i>
+                <span>Some label text</span>
+              </span>
+              <span class="iwt">
+                <span> <i class="fa-solid fa-bell"></i></span>
+                <span>Some longer sample text </span>
+              </span>
+            </div>
+            <div class="card-footer text-end">
+              <a href="#" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 info">
+            <div class="vcenter-item overlay" onclick="off(this)">
+              <i class="close-icon fa-solid fa-circle-xmark"></i>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </div>
+            <i class="info-icon fa-solid fa-question-circle" onclick="on(this)"></i>
+            <img src="images/content/slide-img-2.jpg" class="card-img-top" alt="images">
+            <div class="card-body">
+              <h5 class="card-title mt-3 mb-4">Lorem ipsum title</h5>
+              <span class="iwt">
+                <i class="fa-solid fa-battery-half"></i>
+                <span>Some label text</span>
+              </span>
+              <span class="iwt">
+                <i class="fa-solid fa-bell"></i>
+                <span>Some longer sample text</span>
+              </span>
+            </div>
+            <div class="card-footer text-end">
+              <a href="#" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 info">
+            <div class="vcenter-item overlay" onclick="off(this)">
+              <i class="close-icon fa-solid fa-circle-xmark"></i>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </div>
+            <i class="info-icon fa-solid fa-question-circle" onclick="on(this)"></i>
+            <img src="images/content/slide-img-1.jpg" class="card-img-top" alt="images">
+            <div class="card-body">
+              <h5 class="card-title mt-3 mb-4">Lorum ipsum title</h5>
+              <span class="iwt">
+                <i class="fa-solid fa-battery-half"></i>
+                <span>Some label text</span>
+              </span>
+              <span class="iwt">
+                <i class="fa-solid fa-bell"></i>
+                <span>Some longer sample text</span>
+              </span>
+              <span class="iwt">
+                <i class="fa-solid fa-bed"></i>
+                <span>Some label text</span>
+              </span>
+            </div>
+            <div class="card-footer text-end">
+              <a href="#" class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
